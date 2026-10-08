@@ -7,6 +7,7 @@ class MockSongs {
         songs.add("havana");
         songs.add("havana");
         songs.add("Cassidy");
+        songs.add("sindy");
         return songs;
     }
 }
