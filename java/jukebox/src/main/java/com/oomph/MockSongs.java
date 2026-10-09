@@ -12,6 +12,7 @@ class MockSongs {
         songs.add("havana");
         songs.add("havana");
         songs.add("Cassidy");
+        songs.add("50 Ways");
         return songs;
     }
 }
