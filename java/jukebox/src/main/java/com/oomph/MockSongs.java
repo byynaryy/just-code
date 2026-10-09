@@ -10,7 +10,6 @@ class MockSongs {
         songs.add("cassidy");
         songs.add("$10");
         songs.add("havana");
-        songs.add("havana");
         songs.add("Cassidy");
         songs.add("50 Ways");
         return songs;
