@@ -1,6 +1,7 @@
 package com.oomph;
 
 
+import java.util.Collections;
 import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -21,6 +22,8 @@ public class Jukebox {
 
     public void go() {
         List<String> songList = MockSongs.getSongStrings();
+        System.out.println(songList);
+        Collections.sort(songList);
         System.out.println(songList);
     }
 }
