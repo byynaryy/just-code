@@ -21,7 +21,7 @@ public class Jukebox {
     }
 
     public void go() {
-        List<String> songList = MockSongs.getSongStrings();
+        List<Song> songList = MockSongs.getSongStrings();
         System.out.println(songList);
         Collections.sort(songList);
         System.out.println(songList);

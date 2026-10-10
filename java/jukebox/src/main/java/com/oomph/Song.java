@@ -1,9 +1,13 @@
 package com.oomph;
 
-public class Song {
+public class Song implements Comparable<Song> {
     private String title;
     private String artist;
     private int bpm;
+
+    public int compareTo(Song s) {
+        return title.compareTo(s.getTitle());
+    }
 
     Song(String title, String artist, int bpm) {
         this.title = title;
