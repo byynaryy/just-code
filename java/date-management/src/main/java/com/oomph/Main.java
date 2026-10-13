@@ -11,5 +11,9 @@ public class Main {
 
         // Create a specific date
         LocalDate specificDate = LocalDate.of(2026, 10, 13);
+
+        // Add or subtract days
+        LocalDate tomorrow = today.plusDays(1);
+        LocalDate lastWeek = today.minusWeeks(1);
     }
 }
