@@ -16,7 +16,7 @@ public class Main {
         } catch (InputMismatchException e) {
             System.out.println("Error: Please enter a valid integer.");
         }
-        scanner.close();*/
+        scanner.close();
         Scanner scanner = new Scanner(System.in);
         int number;
         boolean validInput = false;
@@ -34,6 +34,17 @@ public class Main {
             }
         }
 
-        scanner.close();
+        scanner.close();*/
+
+        // What does the default Object.toString() produce? i.e Artist without Object.toString() overide
+        // and no constructor
+        //Artist artist = new Artist();
+        //System.out.println("And the artist is: "+ artist);
+
+        // @Overide Object.toString()
+        Artist artist = new Artist("John", "Doe");
+        System.out.println(artist);
+
+
     }
 }
