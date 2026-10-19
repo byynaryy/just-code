@@ -1,5 +1,6 @@
 package com.oomph;
 
+import java.math.BigDecimal;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -45,6 +46,8 @@ public class Main {
         Artist artist = new Artist("John", "Doe");
         System.out.println(artist);
 
-
+        BankAccount bankAccount = new BankAccount();
+        bankAccount.deposit(BigDecimal.valueOf(1.00));
+        System.out.println(bankAccount.getBalance());
     }
 }
