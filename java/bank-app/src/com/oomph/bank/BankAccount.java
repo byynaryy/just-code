@@ -26,4 +26,8 @@ public class BankAccount {
             throw new IllegalArgumentException("You have insufficient funds");
         }
     }
+
+    public double getBalance() {
+        return balance;
+    }
 }
