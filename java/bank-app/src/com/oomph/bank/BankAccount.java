@@ -9,4 +9,11 @@ public class BankAccount {
         }
         this.balance += openBalance;
     }
+
+    public void deposit(double deposit) {
+        if(deposit <= 0) {
+            throw new IllegalArgumentException("The deposit amount should be positive");
+        }
+        this.balance += deposit;
+    }
 }
