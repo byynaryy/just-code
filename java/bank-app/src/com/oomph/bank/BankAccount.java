@@ -10,6 +10,13 @@ public class BankAccount {
         this.balance = openingBalance;
     }
 
+    private static double isValidAmount(double amount, String name) {
+        if (!Double.isFinite(amount) || amount < 0) {
+            throw new IllegalArgumentException(name + " must be a positive number");
+        }
+        return amount;
+    }
+
     public void deposit(double deposit) {
         if(deposit <= 0) {
             throw new IllegalArgumentException("The amount should be positive");
