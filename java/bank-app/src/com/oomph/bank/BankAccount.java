@@ -4,10 +4,7 @@ public class BankAccount {
     private double balance;
 
     public BankAccount(double openingBalance) {
-        if(openingBalance < 0) {
-            throw new IllegalArgumentException("Opening balance can not be negative");
-        }
-        this.balance = openingBalance;
+        this.balance = isValidAmount(openingBalance,"Opening balance");
     }
 
     private static double isValidAmount(double amount, String name) {
