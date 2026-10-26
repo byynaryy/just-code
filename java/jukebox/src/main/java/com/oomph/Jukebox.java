@@ -25,5 +25,9 @@ public class Jukebox {
         System.out.println(songList);
         Collections.sort(songList);
         System.out.println(songList);
+
+        ArtistComparator artistComparator = new ArtistComparator();
+        songList.sort(artistComparator);
+        System.out.println(songList);
     }
 }
