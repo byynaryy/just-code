@@ -23,11 +23,14 @@ public class Jukebox {
     public void go() {
         List<Song> songList = MockSongs.getSongStrings();
         System.out.println(songList);
-        Collections.sort(songList);
+        /*Collections.sort(songList);
         System.out.println(songList);
 
         ArtistComparator artistComparator = new ArtistComparator();
         songList.sort(artistComparator);
+        System.out.println(songList);*/
+
+        songList.sort((one, two) -> one.getTitle().compareTo(two.getTitle()));
         System.out.println(songList);
     }
 }
