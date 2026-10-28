@@ -33,6 +33,9 @@ public class Jukebox {
         songList.sort((one, two) -> one.getTitle().compareTo(two.getTitle()));
         System.out.println(songList);
 
+        songList.sort((one, two) -> one.getArtist().compareTo(two.getArtist()));
+        System.out.println(songList);
+
         songList.sort((one, two) -> Integer.compare(one.getBpm(),two.getBpm()));
         System.out.println(songList);
     }
