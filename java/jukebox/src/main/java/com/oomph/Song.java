@@ -32,4 +32,11 @@ public class Song implements Comparable<Song> {
     public String toString() {
         return title +": "+ artist;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Song other)) return false;
+        return java.util.Objects.equals(this.title, other.title);
+    }
 }
