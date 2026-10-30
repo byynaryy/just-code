@@ -39,4 +39,9 @@ public class Song implements Comparable<Song> {
         if (!(obj instanceof Song other)) return false;
         return java.util.Objects.equals(this.title, other.title);
     }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hashCode(title);
+    }
 }
