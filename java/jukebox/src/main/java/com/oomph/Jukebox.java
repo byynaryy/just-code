@@ -1,10 +1,7 @@
 package com.oomph;
 
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -35,7 +32,8 @@ public class Jukebox {
         songList.sort((one, two) -> one.getTitle().compareTo(two.getTitle()));
         System.out.println(songList);
 
-        Set<Song> songSet = new HashSet<>(songList);
+        //Set<Song> songSet = new HashSet<>(songList);
+        Set<Song> songSet = new TreeSet<>(songList);
         System.out.println(songSet);
 
         songList.sort((one, two) -> one.getArtist().compareTo(two.getArtist()));
